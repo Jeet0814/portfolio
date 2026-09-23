@@ -29,12 +29,21 @@ export const personalInfo = {
 };
 
 export const skillsData = {
-  technical: ["Web Development", "Database Management", "Salesforce", "WordPress"],
+  technical: ["Web Development", "PHP / Laravel", "Database Management", "Salesforce", "WordPress"],
   professional: ["Event Management", "Social Skills"],
   soft: ["Communication", "Public Speaking", "Team Collaboration"]
 };
 
 export const experienceData = [
+  {
+    company: "Arth Technology",
+    role: "PHP Laravel Developer Intern",
+    period: "Sep 2024 – Present",
+    location: "Vadodara, Gujarat",
+    logo: "/arth-technology-logo.svg",
+    isCurrent: true,
+    description: "Working as a PHP Laravel Developer Intern developing robust backend web architectures, RESTful API endpoints, relational database management with MySQL, and contributing to custom enterprise software solutions."
+  },
   {
     company: "Ek Pehel Foundation / Goldenmace IT Solutions",
     role: "Web Development Intern",

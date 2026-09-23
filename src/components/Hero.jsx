@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Mail, Phone, ArrowUpRight, CheckCircle2, FileCode, Download } from 'lucide-react';
+import { MapPin, Mail, Phone, ArrowUpRight, CheckCircle2, FileCode, Download, Sparkles } from 'lucide-react';
 import { personalInfo } from '../data';
 
 export const Hero = () => {
@@ -10,13 +10,13 @@ export const Hero = () => {
     'developer.ts': `const developer = {
   name: 'Jeetsingh Bhadauria',
   location: 'Navsari, Gujarat',
-  foundations: ['Salesforce', 'Full-Stack Web Dev'],
+  currentRole: 'PHP Laravel Developer Intern @ Arth Technology',
   education: 'B.Tech CSE @ ITM SLS Baroda (CPI 9.03)',
-  seeking: 'Full-time roles / Advanced internships'
+  skills: ['PHP', 'Laravel', 'MySQL', 'React', 'Salesforce']
 };`,
     'skills.json': `{
+  "currentStack": ["PHP", "Laravel", "MySQL"],
   "core": ["Web Development", "Salesforce", "WordPress"],
-  "database": ["MySQL", "Database Management"],
   "soft": ["Communication", "Public Speaking", "Team Collaboration"]
 }`,
     'contact.sh': `curl -X POST https://jeetsingh.dev/contact \\
@@ -46,7 +46,7 @@ export const Hero = () => {
     { label: "B.Tech CPI", value: "9.03", sub: "ITM SLS Baroda" },
     { label: "Diploma CGPA", value: "8.96", sub: "GTU Baroda" },
     { label: "Projects Built", value: "5+", sub: "Full-Stack & SSIP" },
-    { label: "Internships", value: "2", sub: "Web Engineering" },
+    { label: "Internships", value: "3", sub: "Arth Tech, Ek Pehel, Techfusion" },
   ];
 
   const containerVariants = {
@@ -76,12 +76,12 @@ export const Hero = () => {
         >
           <motion.div className="lg:col-span-7 space-y-6" variants={itemVariants}>
             <motion.div 
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentCyan/10 border border-accentCyan/30 text-accentCyan text-xs font-mono font-medium shadow-sm"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-medium shadow-sm"
               animate={{ y: [0, -4, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
             >
-              <span className="w-2 h-2 rounded-full bg-accentCyan animate-ping" />
-              Open for Full-Time Roles & Advanced Internships
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+              PHP Laravel Developer Intern @ Arth Technology
             </motion.div>
 
             <div className="space-y-3">
@@ -186,9 +186,9 @@ export const Hero = () => {
 
               <div className="px-4 py-2 bg-[#070a12] border-t border-borderDark/60 flex items-center justify-between text-[11px] text-textMuted">
                 <span className="flex items-center gap-1 text-emerald-400 font-medium">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Ready for hire
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Active @ Arth Technology
                 </span>
-                <span className="text-accentIndigo">TypeScript / Node</span>
+                <span className="text-accentIndigo">PHP / Laravel</span>
               </div>
             </motion.div>
           </motion.div>
